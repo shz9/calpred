@@ -3,6 +3,12 @@
 See [companion manuscript github repository](https://github.com/KangchengHou/calpred-manuscript) for analysis scripts used in the [manuscript](https://www.medrxiv.org/content/10.1101/2023.07.24.23293056v1).
 
 ## Installation
+
+Requires:
+
+- `python>=3.9`
+- `R>=4.1`
+
 ```bash
 # calpred calls R packages statmod and Rchoice in fitting the model
 Rscript -e "install.packages(c('statmod', 'Rchoice'), repos='https://cran.rstudio.com')"
