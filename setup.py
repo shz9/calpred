@@ -12,9 +12,10 @@ setup(
     long_description_content_type="text/markdown",
     packages=["calpred"],
     setup_requires=["numpy>=1.10"],
+    install_requires=["fire", "structlog", "pandas", "numpy", "matplotlib", "seaborn", "statsmodels", "tqdm"],
     entry_points={"console_scripts": ["calpred=calpred.cli:cli"]},
     package_data={
-        "calpred": ["calpred.cli.R"],
+        "calpred": ["calpred.cli.R", "calpred.R"],
     },
     zip_safe=False,
 )
